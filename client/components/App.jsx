@@ -1,33 +1,22 @@
-import React, { useEffect } from 'react'
-import { connect } from 'react-redux'
+import React from 'react'
 
-import { fetchFruits } from '../actions'
+import ButtonBorder from './ButtonBorder'
+import LargerOnOver from './LargerOnOver'
+
+
 
 //the todo and Thomes has good examples of components on github
 
 
-function App (props) {
-//   useEffect(() => {
-//     props.dispatch(fetchFruits())
-//   }, [])
-
-//   return (
-//     <>
-//       <div className='app'>
-//         <h1>Fullstack Boilerplate - with Fruits!</h1>
-//         <ul>
-//           {props.fruits.map(fruit => (
-//             <li key={fruit}>{fruit}</li>
-//           ))}
-//         </ul>
-//       </div>
-//     </>
-//   )
-}
-const mapStateToProps = (globalState) => {
-  return {
-    fruits: globalState.fruits
-  }
+function App () {
+  return (
+    <>
+    <h1>Welcome to all my Animations</h1>
+    <ButtonBorder/>
+    <LargerOnOver/>
+    </>
+  )
 }
 
-export default connect(mapStateToProps)(App)
+
+export default (App)
