@@ -2,6 +2,7 @@ import React from 'react'
 
 import ButtonBorder from './ButtonBorder'
 import LargerOnOver from './LargerOnOver'
+import FullOutLine from './FullOutLine'
 
 
 
@@ -14,6 +15,7 @@ function App () {
     <h1>Welcome to all my Animations</h1>
     <ButtonBorder/>
     <LargerOnOver/>
+    <FullOutLine/>
     </>
   )
 }
